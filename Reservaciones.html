@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reserva.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <title>Reserva</title>
+</head>
+<body>
+
+    <main class="mainContainer">
+        
+        
+        <div class="principalFilter">
+            <!--
+                dentro del div.panelFilter estarán los botones
+                para fijar fechas de inicio y final de la reserva, los botones
+                para  los
+                elementos desplegables
+    
+              -->
+            
+            <div class="panelFilter">
+                <!-- los botnes par fijar fechas deben estar dentro de un contenedor -->
+                <div class="dateContainer">
+                    <!-- el boton debe desplegar un calendario -->
+                    <button class=" dropdown1 buttonContainer" type="button" >
+
+                        <div class="title1 pointerCursor1 imgContainer">
+                            <!-- aqui va la imagen de un calendario -->
+                            <img src="" alt="imagen_cronograma">
+                            <span id="date">fecha de hoy </span>
+                             <img src="./flechaAtras.png" class="fa fa-angle-right1">
+                        </div>
+
+                                             
+                        <!--el calendario debe mostrar la fecha actual-->
+                        <!--debe haber un calendario para la fecha inicial de reserva-->
+                        <div class="menu1 pointerCursor1 hide actualDate">
+                            <!-- fecha actual -->
+                            <p></p> 
+                            <div class='option1' id='option1'>Opcion a</div>
+                        </div>
+                        
+                    </button>
+                    
+                    ->
+                    <!-- el boton debe desplegar un calendario -->
+                    <button class="dropdown buttonContainer" type="button" >
+
+                        <div class="title pointerCursor imgContainer">
+                            <!-- aqui va la imagen de un calendario -->
+                            <img src="" alt="imagen_cronograma">
+                            <!-- aquí se debe mostrar la fecha final -->
+                            <span id="date">--/--/-- </span>
+                            <img src="./flechaAtras.png" class="fa fa-angle-right">
+                        </div>
+
+                        
+                        <!--el calendario debe mostrar la fecha final-->
+                        <!--debe haber un calendario para la fecha final de reserva-->
+                        <div class="menu pointerCursor hide finalDate">
+                            <!-- fecha actual -->
+                            <p></p> 
+                            <div class='option' id='option1'>Opcion 1</div>
+                        </div>
+                        
+                    </button>
+                </div>
+                <!-- Aqui se debe mostrar el número de noches -->
+                
+                
+                
+            
+                <div class="personDate">
+                    <!-- el boton debe desplegar un formulario para llenar datos de cantidad de personas adultos, niños y bebes -->
+                    <button class="buttonContainer" type="button">
+                        <div>
+                            <img src="" alt="imagen de persona">
+                        </div>
+
+                        <div>
+                            
+                        </div>
+                    </button>    
+                </div>
+            </div>
+            
+            <div class="sumary">
+                <span id='nightNumber'>Noches: </span>
+    
+            </div>
+            
+            
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    
+    <script src="./reserva.js"></script>
+</body>
+</html>
